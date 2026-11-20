@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(7, 7, 31);
+    overflow-x: hidden;
+    color: white;
+}
+
+#skills-page #nav-bar{
+     position: fixed;
+     left: 80px;
+     top: 20px;
+}
+#nav-bar {
+    width: 1200px;
+    height: 75px;
+    background-color: #1B1933;
+    border-radius: 300px;
+    position: fixed;
+    top: 50px;
+    z-index: 100;
+}
+#nav-bar ul{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    list-style: none;
+    position: relative;
+    top: 25px;
+    left: 250px;
+}
+ul>a{
+    text-decoration: none;
+    color: #E8E7F7;
+    font-size: large;
+    font-weight: 700;
+}
+ul>a:hover{
+    text-decoration: underline;
+    color: white;
+    cursor: pointer;
+}
+#nav-bar h2{
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    color: white;
+    font-family:  Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+}
+#nav-bar a button{
+    background-color: #524DD3;
+    position: relative;
+    left: 1000px;
+    width: 120px;
+    bottom: 5px;
+    height: 40px;
+    color: white;
+    font-size: medium;
+    font-weight: 400;
+    border-radius: 200px;
+    border: 2px solid #524DD3;
+}
+
+
+
+/*PROJECTS STYLE*/
+
+#project-main-heading{
+    font-size: xx-large;
+    font-weight: 800;
+    position: relative;
+    top: 120px;
+    left: 600px;
+}
+#project-main-heading::after{
+    content: "Projects";
+    color: #524DD3;
+}
+#project-content{
+    width: 1200px;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    top: 150px;
+    left: 80px;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 2px 2px 10px 5px #acabb3;
+    border-radius: 20px;
+    color: #acabb3;
+}
+
+
+#project-content .project-box{
+    font-size: small;
+    font-weight: 400;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #1B1933;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px 5px #5d5783;
+    animation-duration: 1s;
+    animation-name: projectCard;
+    animation-iteration-count: 2;
+    
+}
+@keyframes projectCard{
+    from{
+        transform: translate(-200px,-300px);
+    }
+    to{
+        transform: translate(0px,0px);
+    }
+}
+.project-box .project-title{
+    font-size: medium;
+    font-weight: 600;
+    color: white;
+}
+.project-box img{
+    width: 250px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.project-btn{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.project-btn a>button{
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #524DD3;
+    border: 1.2px solid #E8E7F7;
+    color: white;
+}
+.project-btn a>button:hover{
+    transform: translateY(-5px);
+    transition: 0.5s;
+    cursor: pointer;
+}

@@ -1,0 +1,82 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: #1B1933;
+    color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+}
+.contact-confirm-page{
+    width: 500px;
+    height: 250px;
+    background-color: black;
+    position: relative;
+    top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 20px;
+}
+.confirm-correct{
+    background-color: rgb(78, 119, 78);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    animation-duration: 1.5s;
+    animation-name: correct;
+    animation-iteration-count: 1;
+}
+@keyframes correct{
+    0%{
+        transform: translateY(0px);
+    }
+    40%{
+        transform: translateY(-250px);
+    }
+    60%{
+        transform: translateY(10px);
+    }
+    80%{
+        transform: translateY(-100px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.confirm-correct>h1{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    
+}
+.contact-confirm-page #thank-you::after{
+    content: " You..!";
+    color: blueviolet;
+}
+.contact-confirm-page p{
+    color: antiquewhite;
+    width: 350px;
+    text-align: center;
+}
+.contact-confirm-page a{
+    width: 100px;
+    font-size: medium;
+    text-align: center;
+    font-weight: 600;
+}
+.contact-confirm-page>a:visited{
+    color: white;
+}

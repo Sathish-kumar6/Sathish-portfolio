@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(7, 7, 31);
+    overflow-x: hidden;
+}
+
+#portfolio-homepage #nav-bar{
+     position: fixed;
+     left: 80px;
+     top: 20px;
+}
+#nav-bar {
+    width: 1200px;
+    height: 75px;
+    background-color: #1B1933;
+    border-radius: 300px;
+    position: fixed;
+    top: 50px;
+    z-index: 100;
+}
+#nav-bar ul{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    list-style: none;
+    position: relative;
+    top: 25px;
+    left: 250px;
+}
+ul>a{
+    text-decoration: none;
+    color: #E8E7F7;
+    font-size: large;
+    font-weight: 700;
+}
+ul>a:hover{
+    text-decoration: underline;
+    color: white;
+    cursor: pointer;
+}
+#nav-bar h2{
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    color: white;
+    font-family:  Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+}
+#nav-bar a button{
+    background-color: #524DD3;
+    position: relative;
+    left: 1000px;
+    width: 120px;
+    bottom: 5px;
+    height: 40px;
+    color: white;
+    font-size: medium;
+    font-weight: 400;
+    border-radius: 200px;
+    border: 2px solid #524DD3;
+}
+
+/*Profile page*/
+#profile-and-content{
+    
+    width: 1200px;
+    height: 400px;
+    position: relative;
+    left: 75px;
+    top: 150px;
+    display: flex;
+    flex-direction: row;
+    gap: 75px;
+}
+
+#profile-and-content #profile{
+    
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    
+}
+#profile>img{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: 30px;
+    border-radius: 50%;
+    filter: grayscale(5%);
+    animation-duration: 2s;
+    animation-iteration-count: 2;
+    animation-name: profileImage;
+}
+@keyframes profileImage{
+    from{
+        width: 100px;
+        height: 100px;
+        transform: rotate(180deg);
+    }
+    to{
+        width: 200px;
+        height: 200px;
+        transform: rotate(360deg);
+    }
+}
+#profile h2{
+    color: white;
+}
+#profile #resume>button{
+    width: 200px;
+    height: 60px;
+    border-radius: 50px;
+    font-size: medium;
+    font-weight: 700;
+    color: #1B1933;
+    background-color: #524DD3;
+    border: 2px solid #524DD3;
+    color: white;
+    box-shadow: 1px 1px 20px 2px #E8E7F7;
+}
+
+#profile-and-content #profilepage-content{
+    color: #1B1933;
+    width: 600px;
+    font-size: larger;
+    font-weight: 500;
+    word-spacing: 0.1ch;
+    line-height: 2.5ch;
+    position: relative;
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+#profilepage-content>#welcome{
+    font-size: xx-large;
+    font-weight: 800;
+    color: white;
+}
+#profilepage-content>p{
+    color: #E8E7F7;
+}

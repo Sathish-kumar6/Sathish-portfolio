@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(7, 7, 31);
+    overflow-x: hidden;
+}
+
+#aboutme-page #nav-bar{
+     position: fixed;
+     left: 80px;
+     top: 20px;
+}
+#nav-bar {
+    width: 1200px;
+    height: 75px;
+    background-color: #1B1933;
+    border-radius: 300px;
+    position: fixed;
+    top: 50px;
+    z-index: 100;
+}
+#nav-bar ul{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    list-style: none;
+    position: relative;
+    top: 25px;
+    left: 250px;
+}
+ul>a{
+    text-decoration: none;
+    color: #E8E7F7;
+    font-size: large;
+    font-weight: 700;
+}
+ul>a:hover{
+    text-decoration: underline;
+    color: white;
+    cursor: pointer;
+}
+#nav-bar h2{
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    color: white;
+    font-family:  Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+}
+#nav-bar a button{
+    background-color: #524DD3;
+    position: relative;
+    left: 1000px;
+    width: 120px;
+    bottom: 5px;
+    height: 40px;
+    color: white;
+    font-size: medium;
+    font-weight: 400;
+    border-radius: 200px;
+    border: 2px solid #524DD3;
+}
+
+/*About me content */
+#about-content-socialmedia{
+    
+    width: 1200px;
+    height: 400px;
+    position: relative;
+    top: 120px;
+    left: 80px;
+}
+#about-content{
+    position: relative;
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-around;
+    align-items: center;
+}
+#about-content>h1{
+    text-align: center;
+    color: white;
+    background-color: #524DD3;
+    width: 1100px;
+    border-radius: 50px;
+    padding: 10px;
+}
+#about-content>p{
+    width: 1000px;
+    font-size: large;
+    font-weight: 600;
+    line-height: 3ch;
+    color: #cbc9d3;
+}
+#about-social-media{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position: relative;
+    top: 100px;
+    justify-content: space-around;
+    align-items: center;
+}
+#about-social-media h1{
+    text-align: center;
+    text-align: center;
+    color: white;
+    background-color: #524DD3;
+    width: 1100px;
+    border-radius: 50px;
+    padding: 10px;
+}
+#about-social-media>#btn{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+#about-content-socialmedia #about-social-media #btn a>button{
+    width: 150px;
+    height: 50px;
+    font-size: medium;
+    font-weight: 600;
+    border-radius: 30px;
+    background-color: #1B1933;
+    color: white;
+    border: 3px solid #181933;
+    box-shadow: 1px 1px 20px 5px #524DD3;
+}
+
+#about-social-media #btn a>button:hover{
+    animation-duration: 2s;
+    animation-name: aboutButton;
+    animation-iteration-count: infinite;
+}
+@keyframes aboutButton{
+    from{
+        transform: rotate(90deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
